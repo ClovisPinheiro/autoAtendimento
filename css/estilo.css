@@ -1,0 +1,164 @@
+/*Reset de estilos basicos */
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px 100px 0px 100px;
+    background-color: white;
+}
+
+/* Estilo do menu */
+header {
+    background-color: hsl(180, 94%, 48%);
+    color: #0c0b0b;
+    padding: 10px 0;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.desktop-menu {
+    list-style: nome;
+    display: flex;
+    justify-content: left;
+    margin: 5px;
+    margin-top: auto;
+}
+
+.desktop-menu li {
+    margin: 0 150px;
+    list-style: none;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: hsl(184, 86%, 48%);
+    color: #0c0000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 0;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-right: 100px;
+    height: 26vh;
+
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 19%;
+    margin-left: 11px;
+}
+
+.texto {
+    flex: 1;
+    padding: 0 20px;
+    font-size: max(15px, 1vw);
+}
+
+h1 span {
+    background: linear-gradient(to bottom, #1abc9c, #3498db 50% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    text-align: justify;
+}
+
+html {
+    background-color: black;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-content: stretch;
+    width: calc(100px - 200px); /*Para ajustar o espaço disponivel após o menu */
+}
+
+/* Estilo dos botões */
+.button-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnConsultas {
+    background-color: #4caf50;
+    color: white;
+    padding: 30px 40px;
+}
+
+.btnExames {
+    background-color: #3498db;
+    color: white;
+    padding: 30px 40px;
+}
+
+
+/* Estilo responsivo */
+@media screen and (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu-select {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .desktop-menu li {
+        margin: 10px 0;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .texto {
+        padding: 20px 0;
+    }
+
+    body {
+        margin: 0;
+    }
+}
+
